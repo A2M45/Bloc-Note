@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.mode-sombre {
+    background-color: #333;
+    color: #fff;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    transition: background-color 0.3s;
+}
+
+body.mode-sombre .container {
+    background-color: #444;
+}
+
+h1 {
+    text-align: center;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#mode-toggle {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#mode-toggle:hover {
+    background-color: #218838;
+}
+
+#search, #categorie {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+#form-note {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#form-note input, #form-note textarea, #form-note select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#form-note textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#form-note button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#form-note button:hover {
+    background-color: #218838;
+}
+
+#annuler-edit {
+    background-color: #dc3545;
+}
+
+#annuler-edit:hover {
+    background-color: #c82333;
+}
+
+#chronologie {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.note {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid #28a745;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+body.mode-sombre .note {
+    background-color: #555;
+}
+
+.note h3 {
+    margin: 0;
+    color: #333;
+}
+
+body.mode-sombre .note h3 {
+    color: #fff;
+}
+
+.note p {
+    margin: 10px 0 0;
+    color: #555;
+}
+
+body.mode-sombre .note p {
+    color: #ddd;
+}
+
+.note small {
+    display: block;
+    margin-top: 5px;
+    color: #777;
+}
+
+body.mode-sombre .note small {
+    color: #bbb;
+}
+
+.note .categorie {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.note .actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.note .actions button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.note .actions button:hover {
+    background-color: #c82333;
+}

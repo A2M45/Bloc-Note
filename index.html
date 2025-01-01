@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloc-notes Avancé</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bloc-notes Avancé</h1>
+        <div class="controls">
+            <button id="mode-toggle">Mode Sombre</button>
+            <input type="text" id="search" placeholder="Rechercher une note...">
+            <select id="categorie">
+                <option value="Toutes">Toutes les catégories</option>
+                <option value="Travail">Travail</option>
+                <option value="Personnel">Personnel</option>
+                <option value="Autre">Autre</option>
+            </select>
+        </div>
+        <form id="form-note">
+            <input type="text" id="titre" placeholder="Titre de la note" required>
+            <textarea id="contenu" placeholder="Contenu de la note" required></textarea>
+            <select id="note-categorie">
+                <option value="Travail">Travail</option>
+                <option value="Personnel">Personnel</option>
+                <option value="Autre">Autre</option>
+            </select>
+            <button type="submit" id="ajouter-note">Ajouter la note</button>
+            <button type="button" id="annuler-edit" style="display: none;">Annuler</button>
+        </form>
+        <div id="chronologie">
+            <!-- Les notes seront affichées ici -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
